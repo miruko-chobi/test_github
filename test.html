@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cool Landing</title>
+    <meta name="description" content="かっこいいデザインのワンページサイト（HTML + CSS）" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">本文へスキップ</a>
+
+    <header>
+      <div class="container nav">
+        <div class="brand" aria-label="サイト名">
+          <span class="brand-badge" aria-hidden="true"></span>
+          <span>Cool Landing</span>
+        </div>
+
+        <nav class="nav-links" aria-label="メインメニュー">
+          <a href="#features">特徴</a>
+          <a href="#showcase">プレビュー</a>
+          <a href="#contact">問い合わせ</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="kicker">
+              <span class="dot" aria-hidden="true"></span>
+              <span>ネオン×ガラス表現のモダンUI</span>
+            </div>
+
+            <h1>
+              <span class="title-gradient">かっこいいサイト</span>
+              を一瞬で公開
+            </h1>
+
+            <p class="lead">
+              HTMLとCSSだけで作る、読みやすくて気持ちいい見た目。
+              ホバー、背景アニメ、レイアウト調整までまとめてあります。
+            </p>
+
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#features">
+                <span class="btn-icon" aria-hidden="true">→</span>
+                特徴を見る
+              </a>
+              <a class="btn" href="#contact">
+                <span class="btn-icon" aria-hidden="true">☎</span>
+                相談する
+              </a>
+            </div>
+          </div>
+
+          <aside class="hero-card" aria-label="ハイライト">
+            <div class="stat-grid">
+              <div class="stat">
+                <strong>Fast</strong>
+                <span>CSS中心で軽い</span>
+              </div>
+              <div class="stat">
+                <strong>Neon</strong>
+                <span>背景グリッド演出</span>
+              </div>
+              <div class="stat">
+                <strong>Glass</strong>
+                <span>カードの透明感</span>
+              </div>
+              <div class="stat">
+                <strong>Responsive</strong>
+                <span>スマホにも対応</span>
+              </div>
+            </div>
+
+            <p class="mini-note">
+              <span class="spark" aria-hidden="true"></span>
+              このページは外部ライブラリなし。見た目をカスタムしやすい構成です。
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="features">
+        <div class="container">
+          <h2 class="section-title">特徴</h2>
+          <p class="section-subtitle">
+            眺めているだけでテンションが上がる「余白」「動き」「コントラスト」にこだわりました。
+          </p>
+
+          <div class="cards" role="list">
+            <article class="card" role="listitem">
+              <span class="chip"><span class="chip-dot" aria-hidden="true"></span> 背景アニメ</span>
+              <h3>グリッドの流れ</h3>
+              <p>固定背景に動きを加えて、静止画でも“動いてる感”を演出します。</p>
+            </article>
+
+            <article class="card" role="listitem">
+              <span class="chip"><span class="chip-dot" aria-hidden="true"></span> ホバー演出</span>
+              <h3>カードの浮き上がり</h3>
+              <p>マウスオーバーで少し浮いて、次に見せたい要素へ誘導します。</p>
+            </article>
+
+            <article class="card" role="listitem">
+              <span class="chip"><span class="chip-dot" aria-hidden="true"></span> ガラス表現</span>
+              <h3>透明感のある枠</h3>
+              <p>境界線と薄い背景で、奥行きのある“それっぽさ”を作ります。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="showcase">
+        <div class="container">
+          <h2 class="section-title">プレビュー</h2>
+          <p class="section-subtitle">
+            セクションを分けて、見た目と情報のリズムを整えています。
+          </p>
+
+          <div class="showcase">
+            <div class="panel">
+              <h3>デザイン方針</h3>
+              <p>
+                暗めの背景に、紫とミントのアクセント。文字は読みやすく、余白は気持ちよく。
+                そして“触って楽しい”ホバーを入れています。
+              </p>
+              <ul class="list">
+                <li><span class="check" aria-hidden="true">✓</span><span>背景：グラデーション＋グリッド</span></li>
+                <li><span class="check" aria-hidden="true">✓</span><span>UI：ボタンとカードに立体感</span></li>
+                <li><span class="check" aria-hidden="true">✓</span><span>レスポンシブ：1カラムへ自動切替</span></li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h3>カスタムしよう</h3>
+              <p>
+                `style.css` の `--primary` や `--primary2` を変えるだけで、雰囲気をガラッと変えられます。
+                タイトル文言やカード内容も自由に差し替えOKです。
+              </p>
+              <ul class="list">
+                <li><span class="check" aria-hidden="true">✓</span><span>色：CSS変数を調整</span></li>
+                <li><span class="check" aria-hidden="true">✓</span><span>文：ヒーローとカードを変更</span></li>
+                <li><span class="check" aria-hidden="true">✓</span><span>見た目：ホバー量を調整</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h2 class="section-title">問い合わせ</h2>
+          <p class="section-subtitle">
+            このテンプレはフォームなし（HTML + CSSのみ）です。
+            まずは見た目を固めるのに使えます。
+          </p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#main">
+              <span class="btn-icon" aria-hidden="true">↑</span>
+              上へ戻る
+            </a>
+            <a class="btn" href="mailto:example@example.com">
+              <span class="btn-icon" aria-hidden="true">✉</span>
+              メール例を開く
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-row">
+        <div>
+          <strong style="color: rgba(255,255,255,0.9);">Cool Landing</strong>
+          <div style="margin-top:6px; color: var(--muted); font-weight: 700;">© 2026</div>
+        </div>
+
+        <div class="footer-links" aria-label="フッターリンク">
+          <a href="#features">特徴</a>
+          <a href="#showcase">プレビュー</a>
+          <a href="#contact">問い合わせ</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
